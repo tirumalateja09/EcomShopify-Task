@@ -23,7 +23,7 @@ const HomePage: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-4">
-              Welcome to ShopEase
+              Welcome to Shopify
             </h1>
             <p className="text-xl md:text-2xl mb-8 opacity-90">
               Discover amazing products with seamless payments
@@ -49,7 +49,7 @@ const HomePage: React.FC = () => {
               className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
             />
           </div>
-          
+
           <div className="flex items-center space-x-2">
             <Filter size={20} className="text-gray-500" />
             <select
@@ -57,7 +57,7 @@ const HomePage: React.FC = () => {
               onChange={(e) => setSelectedCategory(e.target.value)}
               className="px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
             >
-              {categories.map(category => (
+              {categories.map((category) => (
                 <option key={category} value={category}>
                   {category}
                 </option>
@@ -69,10 +69,11 @@ const HomePage: React.FC = () => {
         {/* Products Grid */}
         <div className="mb-6">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">
-            {selectedCategory === 'All' ? 'All Products' : selectedCategory}
+            {selectedCategory === "All" ? "All Products" : selectedCategory}
           </h2>
           <p className="text-gray-600">
-            {filteredProducts.length} product{filteredProducts.length !== 1 ? 's' : ''} found
+            {filteredProducts.length} product
+            {filteredProducts.length !== 1 ? "s" : ""} found
           </p>
         </div>
 
@@ -81,12 +82,16 @@ const HomePage: React.FC = () => {
             <div className="text-gray-400 mb-4">
               <ShoppingBag size={64} className="mx-auto" />
             </div>
-            <h3 className="text-xl font-medium text-gray-900 mb-2">No products found</h3>
-            <p className="text-gray-600">Try adjusting your search or filter criteria</p>
+            <h3 className="text-xl font-medium text-gray-900 mb-2">
+              No products found
+            </h3>
+            <p className="text-gray-600">
+              Try adjusting your search or filter criteria
+            </p>
           </div>
         ) : (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-            {filteredProducts.map(product => (
+            {filteredProducts.map((product) => (
               <ProductCard key={product.id} product={product} />
             ))}
           </div>

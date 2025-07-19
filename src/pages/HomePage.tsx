@@ -40,19 +40,22 @@ const HomePage: React.FC = () => {
       <div className="relative bg-gradient-to-br from-blue-600 via-purple-600 to-indigo-700 text-white overflow-hidden">
         <div className="absolute inset-0 bg-black opacity-20"></div>
         <div className="absolute inset-0 bg-gradient-to-r from-blue-600/30 to-purple-600/30"></div>
-        
+
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
           <div className="text-center">
             <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-white to-blue-100 bg-clip-text text-transparent">
-              Welcome to ShopEase
+              Welcome to Shopify
             </h1>
             <p className="text-xl md:text-2xl mb-8 opacity-90 max-w-3xl mx-auto leading-relaxed">
-              Discover amazing products with seamless payments and exceptional service
+              Discover amazing products with seamless payments and exceptional
+              service
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-8">
               <div className="flex items-center space-x-3">
                 <ShoppingBag size={24} className="text-blue-200" />
-                <span className="text-lg">Free shipping on orders over $50</span>
+                <span className="text-lg">
+                  Free shipping on orders over $50
+                </span>
               </div>
               <div className="flex items-center space-x-3">
                 <Star size={24} className="text-yellow-300" />
@@ -61,7 +64,7 @@ const HomePage: React.FC = () => {
             </div>
           </div>
         </div>
-        
+
         {/* Decorative elements */}
         <div className="absolute top-0 left-0 w-full h-full overflow-hidden">
           <div className="absolute -top-40 -right-40 w-80 h-80 bg-white opacity-10 rounded-full"></div>
@@ -78,7 +81,9 @@ const HomePage: React.FC = () => {
                 <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full mb-4 group-hover:scale-110 transition-transform duration-200">
                   <feature.icon size={32} className="text-white" />
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">{feature.title}</h3>
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                  {feature.title}
+                </h3>
                 <p className="text-gray-600">{feature.description}</p>
               </div>
             ))}
@@ -91,12 +96,14 @@ const HomePage: React.FC = () => {
         {/* Search and Filter */}
         <div className="mb-12">
           <div className="text-center mb-8">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Featured Products</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+              Featured Products
+            </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
               Discover our carefully curated selection of high-quality products
             </p>
           </div>
-          
+
           <div className="flex flex-col md:flex-row gap-4 mb-8">
             <div className="flex-1 relative">
               <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 h-5 w-5" />
@@ -108,7 +115,7 @@ const HomePage: React.FC = () => {
                 className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent shadow-sm"
               />
             </div>
-            
+
             <div className="flex items-center space-x-2">
               <Filter size={20} className="text-gray-500" />
               <select
@@ -116,7 +123,7 @@ const HomePage: React.FC = () => {
                 onChange={(e) => setSelectedCategory(e.target.value)}
                 className="px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent shadow-sm"
               >
-                {categories.map(category => (
+                {categories.map((category) => (
                   <option key={category} value={category}>
                     {category}
                   </option>
@@ -127,10 +134,11 @@ const HomePage: React.FC = () => {
 
           <div className="mb-6">
             <h3 className="text-xl font-semibold text-gray-900 mb-2">
-              {selectedCategory === 'All' ? 'All Products' : selectedCategory}
+              {selectedCategory === "All" ? "All Products" : selectedCategory}
             </h3>
             <p className="text-gray-600">
-              {filteredProducts.length} product{filteredProducts.length !== 1 ? 's' : ''} found
+              {filteredProducts.length} product
+              {filteredProducts.length !== 1 ? "s" : ""} found
             </p>
           </div>
         </div>
@@ -141,12 +149,16 @@ const HomePage: React.FC = () => {
             <div className="text-gray-400 mb-4">
               <ShoppingBag size={64} className="mx-auto" />
             </div>
-            <h3 className="text-xl font-medium text-gray-900 mb-2">No products found</h3>
-            <p className="text-gray-600">Try adjusting your search or filter criteria</p>
+            <h3 className="text-xl font-medium text-gray-900 mb-2">
+              No products found
+            </h3>
+            <p className="text-gray-600">
+              Try adjusting your search or filter criteria
+            </p>
           </div>
         ) : (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-            {filteredProducts.map(product => (
+            {filteredProducts.map((product) => (
               <ProductCard key={product.id} product={product} />
             ))}
           </div>

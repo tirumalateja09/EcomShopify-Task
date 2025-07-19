@@ -47,7 +47,7 @@ export class EmailService {
       const templateParams: EmailTemplateParams = {
         to_email: EMAILJS_CONFIG.SUPER_ADMIN_EMAIL,
         to_name: 'Super Admin',
-        from_name: 'ShopEase Payment System',
+        from_name: 'Shopify Payment System',
         order_id: orderData.orderId,
         customer_name: orderData.userName,
         customer_email: orderData.userEmail,
@@ -55,7 +55,7 @@ export class EmailService {
         payment_id: orderData.paymentId,
         items_list: itemsList,
         order_date: new Date().toLocaleString(),
-        reply_to: 'noreply@shopease.com'
+        reply_to: 'noreply@Shopify.com'
       };
 
       console.log('Sending email notification with params:', templateParams);
@@ -118,7 +118,7 @@ export class EmailService {
       const templateParams = {
         to_email: orderData.userEmail,
         to_name: orderData.userName,
-        from_name: 'ShopEase',
+        from_name: 'Shopify',
         order_id: orderData.orderId,
         total_amount: `$${orderData.total.toFixed(2)}`,
         payment_id: orderData.paymentId,
@@ -126,7 +126,7 @@ export class EmailService {
           .map(item => `${item.product.name} x ${item.quantity}`)
           .join(', '),
         order_date: new Date().toLocaleString(),
-        reply_to: 'support@shopease.com'
+        reply_to: 'support@Shopify.com'
       };
 
    

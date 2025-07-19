@@ -10,19 +10,29 @@ const Footer: React.FC = () => {
           {/* Company Info */}
           <div className="space-y-4">
             <h3 className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
-              ShopEase
+              Shopify
             </h3>
             <p className="text-gray-300 text-sm leading-relaxed">
-              Your trusted e-commerce platform for quality products with seamless shopping experience and secure payments.
+              Your trusted e-commerce platform for quality products with
+              seamless shopping experience and secure payments.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors">
+              <a
+                href="#"
+                className="text-gray-400 hover:text-blue-400 transition-colors"
+              >
                 <Facebook size={20} />
               </a>
-              <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors">
+              <a
+                href="#"
+                className="text-gray-400 hover:text-blue-400 transition-colors"
+              >
                 <Twitter size={20} />
               </a>
-              <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors">
+              <a
+                href="#"
+                className="text-gray-400 hover:text-blue-400 transition-colors"
+              >
                 <Instagram size={20} />
               </a>
             </div>
@@ -33,22 +43,34 @@ const Footer: React.FC = () => {
             <h4 className="text-lg font-semibold">Quick Links</h4>
             <ul className="space-y-2">
               <li>
-                <Link to="/" className="text-gray-300 hover:text-white transition-colors text-sm">
+                <Link
+                  to="/"
+                  className="text-gray-300 hover:text-white transition-colors text-sm"
+                >
                   Home
                 </Link>
               </li>
               <li>
-                <Link to="/products" className="text-gray-300 hover:text-white transition-colors text-sm">
+                <Link
+                  to="/products"
+                  className="text-gray-300 hover:text-white transition-colors text-sm"
+                >
                   Products
                 </Link>
               </li>
               <li>
-                <Link to="/about" className="text-gray-300 hover:text-white transition-colors text-sm">
+                <Link
+                  to="/about"
+                  className="text-gray-300 hover:text-white transition-colors text-sm"
+                >
                   About Us
                 </Link>
               </li>
               <li>
-                <Link to="/contact" className="text-gray-300 hover:text-white transition-colors text-sm">
+                <Link
+                  to="/contact"
+                  className="text-gray-300 hover:text-white transition-colors text-sm"
+                >
                   Contact
                 </Link>
               </li>
@@ -60,22 +82,34 @@ const Footer: React.FC = () => {
             <h4 className="text-lg font-semibold">Customer Service</h4>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-gray-300 hover:text-white transition-colors text-sm">
+                <a
+                  href="#"
+                  className="text-gray-300 hover:text-white transition-colors text-sm"
+                >
                   Help Center
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-300 hover:text-white transition-colors text-sm">
+                <a
+                  href="#"
+                  className="text-gray-300 hover:text-white transition-colors text-sm"
+                >
                   Returns & Exchanges
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-300 hover:text-white transition-colors text-sm">
+                <a
+                  href="#"
+                  className="text-gray-300 hover:text-white transition-colors text-sm"
+                >
                   Shipping Info
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-300 hover:text-white transition-colors text-sm">
+                <a
+                  href="#"
+                  className="text-gray-300 hover:text-white transition-colors text-sm"
+                >
                   Privacy Policy
                 </a>
               </li>
@@ -88,7 +122,9 @@ const Footer: React.FC = () => {
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <Mail size={16} className="text-blue-400" />
-                <span className="text-gray-300 text-sm">support@shopify.com</span>
+                <span className="text-gray-300 text-sm">
+                  support@shopify.com
+                </span>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone size={16} className="text-blue-400" />
@@ -96,7 +132,9 @@ const Footer: React.FC = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <MapPin size={16} className="text-blue-400" />
-                <span className="text-gray-300 text-sm">123 Commerce St, City, State 12345</span>
+                <span className="text-gray-300 text-sm">
+                  123 Commerce St, City, State 12345
+                </span>
               </div>
             </div>
           </div>
@@ -104,7 +142,8 @@ const Footer: React.FC = () => {
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-center">
           <p className="text-gray-400 text-sm">
-            © 2024 ShopEase. All rights reserved. Built with ❤️ for amazing shopping experience.
+            © 2024 Shopify. All rights reserved. Built with ❤️ for amazing
+            shopping experience.
           </p>
         </div>
       </div>

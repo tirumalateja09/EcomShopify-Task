@@ -1,4 +1,4 @@
-# 📋 ShopEase - Code Documentation
+# 📋 Shopify - Code Documentation
 
 ## 🏗️ **Project Architecture**
 
@@ -54,7 +54,7 @@ src/
 
 ```typescript
 // Location: src/hooks/useAuth.ts
-const SUPER_ADMIN_EMAIL = 'kasanitirumalateja@gmail.com';
+const SUPER_ADMIN_EMAIL = 'superAdmin@gmail.com';
 
 // Auto-assigns admin role based on email
 const user: User = {
@@ -149,7 +149,7 @@ export const EMAILJS_CONFIG = {
   SERVICE_ID: '',     // Your EmailJS service ID
   TEMPLATE_ID: '',    // Your EmailJS template ID
   PUBLIC_KEY: '',     // Your EmailJS public key
-  SUPER_ADMIN_EMAIL: 'kasanitirumalateja@gmail.com'
+  SUPER_ADMIN_EMAIL: 'SuperAdmin@gmail.com'
 };
 ```
 
@@ -267,7 +267,7 @@ interface RootState {
 5. Check admin dashboard for order
 
 ### **Admin Flow Testing**
-1. Sign in as admin (kasanitirumalateja@gmail.com)
+1. Sign in as admin (SuperAdmin@gmail.com)
 2. View real payment data
 3. Manage order statuses
 4. Check email notifications
@@ -306,6 +306,6 @@ npm run lint     # Run ESLint
 
 ## 📞 **Support & Contact**
 
-- **Admin Email**: kasanitirumalateja@gmail.com
-- **Application**: ShopEase E-commerce Platform
+- **Admin Email**: SuperAdmin@gmail.com
+- **Application**: Shopify E-commerce Platform
 - **Version**: 1.0.0

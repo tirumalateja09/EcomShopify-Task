@@ -1,4 +1,4 @@
-# ShopEase - E-Commerce Payment Notification System
+# Shopify - E-Commerce Payment Notification System
 
 A modern e-commerce application with real-time payment processing and admin notifications.
 
@@ -67,7 +67,7 @@ Subject: New Payment Received - Order {{order_id}}
 
 Hello {{to_name}},
 
-A new payment has been received on ShopEase!
+A new payment has been received on Shopify!
 
 Order Details:
 - Order ID: {{order_id}}

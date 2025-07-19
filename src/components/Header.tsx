@@ -34,21 +34,33 @@ const Header: React.FC<HeaderProps> = ({ onCartClick }) => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <h1 className="text-2xl font-bold text-blue-600">ShopEase</h1>
+            <h1 className="text-2xl font-bold text-blue-600">Shopify</h1>
           </div>
 
           {/* Navigation - Desktop */}
           <nav className="hidden md:flex space-x-8">
-            <a href="#" className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">
+            <a
+              href="#"
+              className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors"
+            >
               Home
             </a>
-            <a href="#" className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">
+            <a
+              href="#"
+              className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors"
+            >
               Products
             </a>
-            <a href="#" className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">
+            <a
+              href="#"
+              className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors"
+            >
               About
             </a>
-            <a href="#" className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">
+            <a
+              href="#"
+              className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors"
+            >
               Contact
             </a>
           </nav>
@@ -80,7 +92,9 @@ const Header: React.FC<HeaderProps> = ({ onCartClick }) => {
                     alt={user.name}
                     className="h-8 w-8 rounded-full"
                   />
-                  <span className="hidden md:block text-sm font-medium">{user.name}</span>
+                  <span className="hidden md:block text-sm font-medium">
+                    {user.name}
+                  </span>
                 </button>
 
                 {isUserMenuOpen && (
@@ -89,7 +103,7 @@ const Header: React.FC<HeaderProps> = ({ onCartClick }) => {
                       <div className="px-4 py-2 text-sm text-gray-700 border-b">
                         {user.email}
                       </div>
-                      {user.role === 'admin' && (
+                      {user.role === "admin" && (
                         <a
                           href="#admin"
                           className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
@@ -132,16 +146,28 @@ const Header: React.FC<HeaderProps> = ({ onCartClick }) => {
         {isMenuOpen && (
           <div className="md:hidden border-t border-gray-200">
             <div className="px-2 pt-2 pb-3 space-y-1">
-              <a href="#" className="block px-3 py-2 text-gray-700 hover:text-blue-600 text-base font-medium">
+              <a
+                href="#"
+                className="block px-3 py-2 text-gray-700 hover:text-blue-600 text-base font-medium"
+              >
                 Home
               </a>
-              <a href="#" className="block px-3 py-2 text-gray-700 hover:text-blue-600 text-base font-medium">
+              <a
+                href="#"
+                className="block px-3 py-2 text-gray-700 hover:text-blue-600 text-base font-medium"
+              >
                 Products
               </a>
-              <a href="#" className="block px-3 py-2 text-gray-700 hover:text-blue-600 text-base font-medium">
+              <a
+                href="#"
+                className="block px-3 py-2 text-gray-700 hover:text-blue-600 text-base font-medium"
+              >
                 About
               </a>
-              <a href="#" className="block px-3 py-2 text-gray-700 hover:text-blue-600 text-base font-medium">
+              <a
+                href="#"
+                className="block px-3 py-2 text-gray-700 hover:text-blue-600 text-base font-medium"
+              >
                 Contact
               </a>
             </div>
